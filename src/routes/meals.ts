@@ -148,7 +148,7 @@ export async function meals(app: FastifyInstance) {
         .first()
 
       const outDiet = await knex('meals')
-        .count('*', { as: 'outDiet' })
+        .count('*', { as: 'total' })
         .where({ user_id: userId, diet: 0 })
         .first()
 

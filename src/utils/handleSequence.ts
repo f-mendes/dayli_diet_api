@@ -7,7 +7,7 @@ interface Meal {
   diet: number
 }
 
-export function findBestSequence(meals: Array<Meal>) {
+export async function findBestSequence(meals: Array<Meal>) {
   let bestStart = -1
   let bestLength = 0
   let currentStart = -1
